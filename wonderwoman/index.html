@@ -8,10 +8,11 @@
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
   crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md fixed-top">
         <a class="navbar-brand" href="#">Logo</a>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,33 +20,36 @@
         <div class="collapse navbar-collapse" id="main-navigation">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#aboutme">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <header class="page-header header container-fluid">
+      <header class="page-header header container-fluid" id="home">
           <div class="overlay"></div>
       </header>
         <div class="description">
             <h1>Hi there</h1>
             <p>Welcome to the website of a wonder woman </p>
-            <button class="btn btn-outline-secondary btn-lg">About me</button>
         </div>
         
-        <div class="aboutme">
-          <h1>About me</h1>
-        </div>
-
-
-        <div class="container features">
+         <div class="container features">
+          <header class="aboutme" id="aboutme">
+              <h1>About me</h1>
+          </header>
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12">
               <img src="img/aboutme.jpg" class="img-fluid">
@@ -77,19 +81,76 @@
           </div> 
         </div>
 
-        <footer class="page-footer">
+
+        <div class="container-fluid gallery" id="portfolio">
+
+          <header class="portfolio">
+            <h1>Portfolio</h1>
+          </header>
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+                <div class="d-flex flex-column">
+                    
+                    <div class="text-img-overlay">
+                        <img src="img/Carmen_25012019_33 copy.jpg" class="img-fluid">
+                      <p class="text-img">Carmen</p>
+                    </div>
+                    <img src="img/IMG_7003(1).jpg" class="img-fluid">
+                </div>
+                
+                <div class="d-flex flex-column">
+                    <img src="img/kwiat.jpg" class="img-fluid">
+                    
+                    <img src="img/IMG_7092_copy.jpg" class="img-fluid">
+                </div>
+                
+                <div class="d-flex flex-column">
+                    <img src="img/carmina.jpg" class="img-fluid scale mb-2">
+                    <img src="img/46510362_2472576196116192_4151612716567494656_n.jpg"  class="img-fluid imggallery">
+                </div>
+                
+                <div class="d-flex flex-column">
+                    <img src="img/2S6A1843a.jpg" class="img-fluid m-1 p-1">
+                      <img src="img/3mWemWTRq7s.jpg" class="img-fluid image m-1 p-1">
+                </div>
+            </div>
+        </div>
+       
+
+
+
+
+        <footer class="page-footer" id="contact">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 col-md-8 col-sm-12">
-              <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-              <p>Content</p>
-              <p>Content</p>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3 class="feature-title">Get in Touch!</h3>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name" name="">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email Address" name="email">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <h6 class="text-uppercase font-weight-bold">Contact</h6>
-              <p>Wrocław, Poland
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h3 class="feature-title">Contact</h3>
+              <p class="text-center">Wrocław, Poland
               <br/>kotelnikova.anastasiia@gmail.com
               <br/>+ 48 732 042 380
+              <ul class="socicons-list">
+                <li>
+                  <a href='https://www.facebook.com/profile.php?id=100011168892588' target='_blank'><span class="socicon-facebook"></span></a> 
+                </li>
+                  <li>
+                  <a href='https://www.instagram.com/kleoelektra/' target='_blank'><span class="socicon-instagram"></span></a> 
+                </li> 
+                <li>
+                  <a href='https://www.linkedin.com/in/anastasiia-kotelnikova-880956137/' target='_blank'><span class="socicon-linkedin"></span></a> 
+                </li>   
+                </ul>
               </p>
             </div>
           </div>

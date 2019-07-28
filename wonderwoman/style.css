@@ -57,31 +57,21 @@ body {
 	line-height: 1.5;
   }
 
-  .description button {
-	border:1px solid var(--pink);
-	background: rgba(228,195,208,0.1);
-	border-radius: 0;
-	color:var(--white);
-  }
-  .description button:hover {
-	border:1px solid var(--white);
-	background:rgba(228,195,208,0.6);
-	color:var(--plum);
-  }
-
+  
   .features {
 	margin: 1em auto;
 	padding: 1em;
 	position: relative;
 	color: var(--white);
   }
- /* .feature-title {
+  .feature-title {
 	color: var(--white);
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 20px;
 	text-transform: uppercase; 
-  }*/
+	text-align: center;
+  }
   .features img {
 	-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -92,10 +82,19 @@ body {
   .aboutme {
 	  color: var(--pink);
 	  font-size: 1.3rem;
-	  margin-top: 20px;
+	  margin-bottom: 20px;
 	  text-align: center;
 
   }
+  
+  .portfolio {
+	color: var(--brown);
+	font-size: 1.3rem;
+	margin-top:20px;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
   
   .shortfacts-list 
   {
@@ -127,15 +126,88 @@ body {
 	padding: 40px 0;
   }
 
+  .socicons-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  padding: 0px;
+}
+.socicons-list li {
+  margin: 10px 10px;
+}
+.socicons-list li a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 40%;
+  color: #fff;
+  background-color: #f1f1f1;
+  transition: all ease-in-out 150ms;
+}
+.socicons-list li a:hover {
+text-shadow: 0 5px 10px #212121;
+}
+
+.socicons-list li:nth-child(1) a {
+    background-color: #3e5b98;
+}
+.socicons-list li:nth-child(2) a {
+    background-color: #c13584;
+}
+.socicons-list li:nth-child(3) a {
+    background-color: #3371b7;
+}
+
+.gallery {
+	background: var(--pink);
+}
+
+.flex-column {
+	max-width: 260px;
+}
+
+img {
+	margin: 5px;
+	
+}
+
+.scale {
+	transform: scaleY(1.05);
+	padding-top: 5px; 
+}
+
+.text-img-overlay{
+	position: relative;
+	width:100%;
+	height:100%;
+}
+.text-img-overlay .text-img{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height:20%;
+	background-color: var(--plum);
+	color: var(--pink);
+	bottom: 0px;
+	opacity:0;
+	transition: opacity 0.5s ease-in-out;
+}
+.text-img-overlay:hover .text-img {
+	opacity:0.8;
+}
 
 
 
 
-
-
-
-
-  @media (max-width: 575.98px) {
+  @media (max-width: 500.00px) {
+	.header {
+	float: none;
+    display: block;
+    text-align: left;
+	}
+	
 	.description {
 	  left: 0;
 	  padding: 0 15px;
