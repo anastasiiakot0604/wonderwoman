@@ -4,6 +4,9 @@
 	--pink:#E4C3D1;
 	--brown:#573F4C;
 }
+html{
+	font-size:16px;
+}
 body {
 	padding: 0;
 	margin: 0;
@@ -50,26 +53,24 @@ body {
   }
   .description h1 {
 	color: var(--pink);
+	
   }
   .description p {
 	color: var(--white);
-	font-size: 1.3rem;
+	font-size: 1.618rem;
 	line-height: 1.5;
   }
 
-  
-  .features {
+.features, .gallery {
 	margin: 1em auto;
 	padding: 1em;
 	position: relative;
 	color: var(--white);
   }
+
   .feature-title {
 	color: var(--white);
-	font-size: 1.3rem;
-	font-weight: 700;
 	margin-bottom: 20px;
-	text-transform: uppercase; 
 	text-align: center;
   }
   .features img {
@@ -81,25 +82,15 @@ body {
 
   .aboutme {
 	  color: var(--pink);
-	  font-size: 1.3rem;
 	  margin-bottom: 20px;
 	  text-align: center;
 
   }
   
-  .portfolio {
-	color: var(--brown);
-	font-size: 1.3rem;
-	margin-top:20px;
-	margin-bottom: 20px;
-	text-align: center;
-
-}
-  
   .shortfacts-list 
   {
 	list-style: none;
-	border-width: 0 5px 0 0;
+	border-width: 0 3px 0 0;
 	border-style: dotted; 
 	padding-right: 10px;
 	border-color: var(--pink);
@@ -116,6 +107,49 @@ body {
 	height:1em;
   }
 
+
+  .gallery {
+	background-color: var(--pink);
+}
+
+.flex-column {
+	max-width: 260px;
+}
+
+img {
+	margin: 5px;
+}
+
+.portfolio {
+	color: var(--brown);
+	margin-top:20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.text-img-overlay{
+	position: relative;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+.text-img-overlay .text-img{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height:20%;
+	background-color: var(--plum);
+	color: var(--pink);
+	bottom: 0px;
+	opacity:0;
+	transition: opacity 0.5s ease-in-out;
+	margin:5px;
+	font-size:1rem;
+	font-family: 'Josefin Sans', sans-serif; 
+}
+.text-img-overlay:hover .text-img {
+	opacity:0.8;
+}
   .page-footer {
 	background-color: var(--brown);
 	color: var(--white);
@@ -140,7 +174,6 @@ body {
 .socicons-list li a {
   text-decoration: none;
   padding: 20px;
-  font-size: 20px;
   border-radius: 40%;
   color: #fff;
   background-color: #f1f1f1;
@@ -160,44 +193,16 @@ text-shadow: 0 5px 10px #212121;
     background-color: #3371b7;
 }
 
-.gallery {
-	background: var(--pink);
-}
 
-.flex-column {
-	max-width: 260px;
-}
 
-img {
-	margin: 5px;
-	
+h1 {
+	font-family: 'Cookie', cursive;
+    font-size: 2.61rem;
 }
-
-.scale {
-	transform: scaleY(1.05);
-	padding-top: 5px; 
+p, a, .footer-copyright, .form-group {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1rem;
 }
-
-.text-img-overlay{
-	position: relative;
-	width:100%;
-	height:100%;
-}
-.text-img-overlay .text-img{
-	position: absolute;
-	display: block;
-	width: 100%;
-	height:20%;
-	background-color: var(--plum);
-	color: var(--pink);
-	bottom: 0px;
-	opacity:0;
-	transition: opacity 0.5s ease-in-out;
-}
-.text-img-overlay:hover .text-img {
-	opacity:0.8;
-}
-
 
 
 
