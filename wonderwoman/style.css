@@ -1,31 +1,26 @@
-:root {
-	--plum:#933469;
-	--white:#F8F4FB;
-	--pink:#E4C3D1;
-	--brown:#573F4C;
-}
+
 html{
-	font-size:18px;
+	font-size:100%;
 }
 body {
 	padding: 0;
 	margin: 0;
-	background: var(--plum);
+	background: #933469;
   }
   /*--- navigation bar ---*/
   .navbar {
-	background:var(--brown);
+	background:#573F4C;
   }
   .nav-link,
   .navbar-brand {
-	color: var(--pink);
+	color: #E4C3D1;
 	cursor: pointer;
   }
   .nav-link {
 	margin-right: 1em !important;
   }
   .nav-link:hover {
-	color: var(--white);
+	color: #F8F4FB;
   }
   .navbar-collapse {
 	justify-content: flex-end;
@@ -53,40 +48,40 @@ body {
 	text-align: center;
   }
 .description h1 {
-	color: var(--pink);
+	color: #E4C3D1;
 	
   }
 .description p {
-	color: var(--white);
+	color: #F8F4FB;
 	font-size: 1.618rem;
 	line-height: 1.5;
   }
 
 .description a, .aboutme a {
-	border:1px solid var(--plum);
-	background:var(--pink);
+	border:1px solid #933469;
+	background:#E4C3D1;
 	border-radius: 0;
-	color:var(--plum);
+	color:#933469;
 	opacity:0.5;
   }
 .description a:hover, .aboutme a:hover {
-	border:1px solid var(--plum);
-	background:var(--pink);
-	color:var(--plum);
+	border:1px solid #933469;
+	background:#E4C3D1;
+	color:#933469;
 	opacity:0.9;
   }
 
 .custom-button:focus {
 	box-shadow: none!important;
-	color: var(--plum)!important; 
-	background-color: var(--pink)!important; 
-	border-color: var(--plum)!important;
+	color: #933469!important; 
+	background-color: #E4C3D1!important; 
+	border-color: #933469!important;
 }
 
 .aboutme {
 	padding: 1em;
 	position: relative;
-	color: var(--white);
+	color: #F8F4FB;
 	
   }
 
@@ -103,7 +98,7 @@ body {
 	margin: auto;
   }
 .aboutme-header {
-	  color: var(--pink);
+	  color: #E4C3D1;
 	  text-align: center;
 	  
   }
@@ -114,7 +109,7 @@ body {
 	border-width: 0 3px 0 0;
 	border-style: dotted; 
 	padding-right: 10px;
-	border-color: var(--pink);
+	border-color: #E4C3D1;
   }
 .shortfacts-item {
 	position: relative;
@@ -129,10 +124,10 @@ body {
   }
 
 .portfolio {
-	background-color: var(--pink);
+	background-color: #E4C3D1;
 	padding: 1em;
 	position: relative;
-	color: var(--brown);
+	color: #573F4C;
 	text-align: center;
 }
 
@@ -155,8 +150,8 @@ body {
 	display: block;
 	width: 100%;
 	height:20%;
-	background-color: var(--plum);
-	color: var(--pink);
+	background-color: #933469;
+	color: #E4C3D1;
 	bottom: 0px;
 	opacity:0;
 	transition: opacity 0.5s ease-in-out;
@@ -172,16 +167,16 @@ body {
 
 .skills{
 	padding: 1em 20% 1em 20%;
-	background-color: var(--plum);
+	background-color: #933469;
 }
 .skills-header {
-	color: var(--pink);
+	color: #E4C3D1;
 	margin-bottom: 0px;
 	padding: 0px;
 	text-align: center;
 }
 .skills h3 {
-	color: var(--white);
+	color: #F8F4FB;
 	text-align: center;
 	margin-top:10px;
 }
@@ -218,24 +213,24 @@ body {
 	text-align: center;
   }
   .front {
-	background-color: var(--pink);
-	color:var(--brown);
+	background-color: #E4C3D1;
+	color:#573F4C;
   }
   .back {
-	color:var(--brown);
-	background-color: var(--pink);
+	color:#573F4C;
+	background-color: #E4C3D1;
 	transform: rotateY(180deg);
   }
   .card:hover .front {transform: rotateY(180deg);}
   .card:hover .back {transform: rotateY(360deg);}
 
 	.page-footer {
-		background-color: var(--brown);
-		color: var(--white);
+		background-color: #573F4C;
+		color: #F8F4FB;
 		padding: 50px 0 30px;
 	  }
 	  .footer-title {
-		color: var(--white);
+		color: #F8F4FB;
 		margin-bottom: 20px;
 		text-align: center;
 	  }
