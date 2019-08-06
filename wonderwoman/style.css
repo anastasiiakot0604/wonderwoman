@@ -76,17 +76,18 @@ body {
 	opacity:0.9;
   }
 
-.description btn:active, .aboutme btn:active {
-	box-shadow: none;
-	color: var(--plum); 
-	background-color: var(--pink); 
-	border-color: var(--plum);
+.custom-button:focus {
+	box-shadow: none!important;
+	color: var(--plum)!important; 
+	background-color: var(--pink)!important; 
+	border-color: var(--plum)!important;
 }
 
 .aboutme {
 	padding: 1em;
 	position: relative;
 	color: var(--white);
+	
   }
 
  
@@ -97,7 +98,10 @@ body {
 	margin-bottom: 16px;
 	
 }
-
+.centerBlock {
+	display: table;
+	margin: auto;
+  }
 .aboutme-header {
 	  color: var(--pink);
 	  text-align: center;
@@ -167,7 +171,7 @@ body {
 
 .skills{
 	padding: 1em 20% 1em 20%;
-	background-color: var(--white);
+	background-color: var(--plum);
 }
 .skills-header {
 	color: var(--pink);
@@ -178,37 +182,51 @@ body {
 .skills h3 {
 	color: var(--white);
 	text-align: center;
+	margin-top:10px;
 }
 
-.card .flex-column  {
-	max-width: 453px;
+.wrap {
+	width: 100%;
+	height: auto;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-.card
-{
-	background-color:var(--white);
-	color:var(--brown);
-	margin:5px;
-}
-
-.card-img-top{
-	opacity:0.2;
-}
-
-.face-front, .face-back {
-    width: 100%;
+  .card {
+	width: 128px;
+	height: 128px;
+	position: relative;
+	perspective: 1000px;
+	margin:5px 20px 5px 20px ;
+	
+  }
+  .front, .back {
+	position: absolute;
+	width: 100%;
 	height: 100%;
-	backface-visibility: hidden;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	transition: 1s;
-}  
-
-.face-back {
-    transform: rotateY(180deg);
- }
-.card:hover .face-front {
-    transform: rotateY(180deg);}
-.card:hover .face-back {
-    transform: rotateY(360deg);}
+	backface-visibility: hidden;
+	border-radius: 10px;
+	text-align: center;
+  }
+  .front {
+	background-color: var(--pink);
+	color:var(--brown);
+  }
+  .back {
+	color:var(--brown);
+	background-color: var(--pink);
+	transform: rotateY(180deg);
+  }
+  .card:hover .front {transform: rotateY(180deg);}
+  .card:hover .back {transform: rotateY(360deg);}
 
 	.page-footer {
 		background-color: var(--brown);
@@ -227,6 +245,7 @@ body {
 	  .btn{
 		  margin-bottom:20px;
 	  }
+	  
 	
 	  .socicons-list {
 	  list-style: none;
@@ -266,7 +285,7 @@ h1 {
 	font-family: 'Cookie', cursive;
     font-size: 2.61rem;
 }
-p, a, .footer-copyright, .form-group, h3, h4 {
+p, a, .footer-copyright, .form-group, h3, h4, .card, .btn {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1rem;
 }
@@ -284,7 +303,7 @@ p, a, .footer-copyright, .form-group, h3, h4 {
 	  left: 0;
 	  padding: 0 15px;
 	  position: absolute;
-	  top: 10%;
+	  top: 30%;
 	  transform: none;
 	  text-align: center;
 	}
@@ -300,4 +319,8 @@ p, a, .footer-copyright, .form-group, h3, h4 {
 	.aboutme {
 	  margin: 0;
 	}
+	.img-fluid {
+		max-width: 300px;
+	}
+	
   }
